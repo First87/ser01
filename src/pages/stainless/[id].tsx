@@ -5,6 +5,7 @@ import { stainlessProducts } from "../components/productsData";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import Head from "next/head";
+import Image from "next/image";
 export default function ProductDetails() {
   const router = useRouter();
   const { id } = router.query;
@@ -50,9 +51,10 @@ export default function ProductDetails() {
             
           </div>
           <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-            <img
-             width={500}
-             height={500}
+            <Image
+              width={100}
+              height={100}
+              sizes="100vw"
               src={product.src}
               alt={product.title}
               className="h-full w-full object-cover object-center"

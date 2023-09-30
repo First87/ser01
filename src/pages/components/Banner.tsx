@@ -30,9 +30,9 @@ const Banner: React.FC = () => {
           src="/h1.png"
           alt="banner"
           loading="lazy"
-         
-          height={500}
-          width={1600}
+          width={100}
+          height={100}
+          sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         />
       </SwiperSlide>
@@ -41,9 +41,9 @@ const Banner: React.FC = () => {
           src="/h2.png"
           alt="banner"
           loading="lazy"
-         
-          height={500}
-          width={1600}
+          width={100}
+          height={100}
+          sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         />
       </SwiperSlide>
@@ -52,9 +52,9 @@ const Banner: React.FC = () => {
           src="/h3.png"
           alt="banner"
           loading="lazy"
-         
-          height={500}
-          width={1600}
+          width={100}
+          height={100}
+          sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         />
       </SwiperSlide>

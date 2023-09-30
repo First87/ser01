@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import Head from 'next/head';
-
+import Image from "next/image";
 
 const Footer = dynamic(() => import('./components/Footer'), {
   loading: () => <div className="animate-pulse"></div>,
@@ -77,7 +77,10 @@ export default function Products() {
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative">
                   <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                    <img
+                    <Image
+                    width={100}
+                    height={100}
+                    sizes="100vw"
                       src={callout.imageSrc}
                       alt={callout.imageAlt}
                       className="h-full w-full object-cover object-center"
