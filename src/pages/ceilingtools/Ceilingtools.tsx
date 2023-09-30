@@ -2,7 +2,6 @@ import React from "react"
 import Image from "next/image"
 import { ceilingtoolsProducts } from '../components/productsData'
 import Link from "next/link"
-
 export default function Example() {
   return (
     <>

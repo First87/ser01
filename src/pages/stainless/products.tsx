@@ -1,10 +1,24 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import CardProducts from './Stainless';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
 
+const CardProducts = dynamic(() => import('./Stainless'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+
+
+const Footer = dynamic(() => import('../components/Footer'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+const Header = dynamic(() => import('../components/Header'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
 
 const ProductsPage = () => {
   return (

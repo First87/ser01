@@ -2,7 +2,6 @@ import React from "react"
 import Image from "next/image"
 import { roofProducts } from '../components/productsData'
 import Link from "next/link"
-import Head from "next/head"
 
 
 export default function Example() {

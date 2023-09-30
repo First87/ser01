@@ -1,16 +1,25 @@
 // pages/product/[id].tsx
-import Header from "../components/Header";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { stainlessProducts } from "../components/productsData";
 import { useRouter } from "next/router";
-import Footer from "../components/Footer";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 export default function ProductDetails() {
   const router = useRouter();
   const { id } = router.query;
   const product = stainlessProducts.find((p) => p.id === id);
+
+  const Header = dynamic(() => import('../components/Header'), {
+    loading: () => <div className="animate-pulse "></div>,
+    ssr: false,
+  })
+
+  const Footer = dynamic(() => import('../components/Footer'), {
+    loading: () => <div className="animate-pulse "></div>,
+    ssr: false,
+  })
 
   if (!product) {
     return <div>Product not found</div>;

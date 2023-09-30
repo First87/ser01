@@ -3,7 +3,6 @@ import Image from "next/image"
 import { stainlessProducts } from '../components/productsData'
 import Link from "next/link"
 
-
 export default function Example() {
   return (
     <>

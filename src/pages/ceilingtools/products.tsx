@@ -1,9 +1,22 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import dynamic from 'next/dynamic';
 import CardProducts from './Ceilingtools';
 import Head from 'next/head';
 
+const Header = dynamic(() => import('../components/Header'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+})
+
+const Footer = dynamic(() => import('../components/Footer'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+})
+
+const CardProducts = dynamic(() => import('./Ceilingtools'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+})
 
 
 const ProductsPage = () => {

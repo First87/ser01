@@ -1,12 +1,31 @@
 import React from 'react';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import MainContent from './components/MainContent';
 // import  MainSlide from './components/MainSlide';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
 type Props = {};
+
+
+const MainContent = dynamic(() => import('./components/MainContent'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+const Banner = dynamic(() => import('./components/Banner'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+const Footer = dynamic(() => import('./components/Footer'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+const Header = dynamic(() => import('./components/Header'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
 
 export default function Home({}: Props) {
   return (

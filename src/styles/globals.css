@@ -16,6 +16,11 @@ body {
   color: #FF9D34;
 
 }
+/* ใส่คุณสมบัติ filter: blur ใน CSS */
+.image-blur {
+  filter: blur(5px); /* ปรับค่าตามที่ต้องการ */
+}
+
 
 .top-head{
  

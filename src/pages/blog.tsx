@@ -1,11 +1,25 @@
 import React, { Component } from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import BlogContent from './components/BlogContent'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 type Props = {}
 
 type State = {}
+
+const BlogContent = dynamic(() => import('./components/BlogContent'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+
+const Footer = dynamic(() => import('./components/Footer'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+const Header = dynamic(() => import('./components/Header'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
 
 class blog extends Component<Props, State> {
   state = {}
