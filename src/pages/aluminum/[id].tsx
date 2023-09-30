@@ -1,16 +1,24 @@
 // pages/product/[id].tsx
-import Header from "../components/Header";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { aluminumProducts } from "../components/productsData";
 import { useRouter } from "next/router";
-import Footer from "../components/Footer";
 import Head from "next/head";
 export default function ProductDetails() {
   const router = useRouter();
   const { id } = router.query;
   const product = aluminumProducts.find((p) => p.id === id);
+
+  const Header = dynamic(() => import('../components/Header'), {
+    loading: () => <div className="animate-pulse "></div>,
+    ssr: false,
+  })
+
+  const Footer = dynamic(() => import('../components/Footer'), {
+    loading: () => <div className="animate-pulse "></div>,
+    ssr: false,
+  })
 
   if (!product) {
     return <div>Product not found</div>;
@@ -42,12 +50,11 @@ export default function ProductDetails() {
             
           </div>
           <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-            <Image
+          <img
              width={500}
              height={500}
               src={product.src}
               alt={product.title}
-              priority={true}
               className="h-full w-full object-cover object-center"
             />
           </div>

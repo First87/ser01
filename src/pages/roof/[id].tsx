@@ -1,7 +1,6 @@
 // pages/product/[id].tsx
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { roofProducts } from "../components/productsData";
 import { useRouter } from "next/router";
@@ -52,7 +51,7 @@ export default function ProductDetails() {
             
           </div>
           <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-            <Image
+            <img
              width={500}
              height={500}
               src={product.src}

@@ -1,7 +1,5 @@
 // pages/product/[id].tsx
-import Header from "../components/Header";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { accessoriesstainlessProducts } from "../components/productsData";
 import { useRouter } from "next/router";
@@ -47,7 +45,7 @@ export default function ProductDetails() {
       <div className="pt-6">
         
 
-        {/* Image gallery */}
+        {/* img gallery */}
         <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
           
           <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
@@ -55,7 +53,7 @@ export default function ProductDetails() {
             
           </div>
           <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-            <Image
+            <img
              width={500}
              height={500}
               src={product.src}
