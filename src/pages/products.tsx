@@ -5,6 +5,16 @@ import dynamic from "next/dynamic";
 import Head from 'next/head';
 
 
+const MainContent = dynamic(() => import('./components/MainContent'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
+const Banner = dynamic(() => import('./components/Banner'), {
+  loading: () => <div className="animate-pulse "></div>,
+  ssr: false,
+});
+
 const Footer = dynamic(() => import('./components/Footer'), {
   loading: () => <div className="animate-pulse "></div>,
   ssr: false,
@@ -21,7 +31,6 @@ const callouts = [
       imageSrc: 'https://drive.google.com/uc?export=download&id=1VQXMZBx00pj3Z01YzlTdbj2XYjrwYQA2',
       imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
       href: '/aluminum/products',
-      
     },
     {
       name: 'สแตนเลส',
