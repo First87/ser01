@@ -2,15 +2,12 @@ import React from "react"
 import Image from "next/image"
 import { mirrorProducts } from '../components/productsData'
 import Link from "next/link"
-import Head from "next/head"
+
 
 export default function Example() {
   return (
     <>
-    <Head>
-        <title>กระจก | เสริมศิริ อลูมินั่ม & สแตนเลส</title>
-        <link rel="icon" href="/nav.png" type="icon" />
-    </Head>
+    
     <Link href="/products"
     className="text-xl text-center font-bold back-products  "
     >หมวดหมู่สินค้า</Link>

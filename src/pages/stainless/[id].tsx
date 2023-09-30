@@ -20,6 +20,10 @@ export default function ProductDetails() {
     <>
     <Head>
         <title>รายละเอียด : {product.title} | เสริมศิริ อลูมินั่ม & สแตนเลส</title>
+        <meta name="description" content="สแตนเลส" />
+        <meta name="robots" content="index,follow" />
+        <meta name="keywords" content="เสริมศิริ ครบเครื่องเรื่องสแตนเลส" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/nav.png" type="icon" />
       </Head>
     <Header />
@@ -42,7 +46,7 @@ export default function ProductDetails() {
              width={500}
              height={500}
               src={product.src}
-              alt={product.src}
+              alt={product.title}
               className="h-full w-full object-cover object-center"
             />
           </div>
