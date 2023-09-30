@@ -1,6 +1,5 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import CardProducts from './Mirror';
 import Head from 'next/head';
 
 const Header = dynamic(() => import('../components/Header'), {
@@ -13,7 +12,7 @@ const Footer = dynamic(() => import('../components/Footer'), {
   ssr: false,
 })
 
-const CardProducts = dynamic(() => import('./Mirror
+const CardProducts = dynamic(() => import('./Mirror'), {
   loading: () => <div className="animate-pulse "></div>,
   ssr: false,
 })

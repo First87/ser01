@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 export const aluminumProducts = [
     { id: "01",
     src: "https://drive.google.com/uc?id=1Z68JHIY1xJf7WFxoSX3eeU1SAOP06Ohz",
@@ -285,7 +286,7 @@ const ProductsData = () => {
     <h1>Mirror Products</h1>
     {aluminumProducts.map(product => (
       <div key={product.id}>
-        <img src={product.src} alt={product.title} />
+        <Image src={product.src} alt={product.title} />
         <h2>{product.title}</h2>
         <p>{product.detail}</p>
       </div>
@@ -295,7 +296,7 @@ const ProductsData = () => {
 <h1>Mirror Products</h1>
     {stainlessProducts.map(product => (
       <div key={product.id}>
-        <img src={product.src} alt={product.title} />
+        <Image src={product.src} alt={product.title} />
         <h2>{product.title}</h2>
         <p>{product.detail}</p>
       </div>
@@ -305,7 +306,7 @@ const ProductsData = () => {
     <h1>Mirror Products</h1>
     {mirrorProducts.map(product => (
       <div key={product.id}>
-        <img src={product.src} alt={product.title} />
+        <Image src={product.src} alt={product.title} />
         <h2>{product.title}</h2>
         <p>{product.detail}</p>
       </div>
@@ -316,7 +317,7 @@ const ProductsData = () => {
     <h1>Accessories Stainless Products</h1>
     {accessoriesstainlessProducts.map(product => (
       <div key={product.id}>
-        <img src={product.src} alt={product.title} />
+        <Image src={product.src} alt={product.title} />
         <h2>{product.title}</h2>
         <p>{product.detail}</p>
       </div>
@@ -325,7 +326,7 @@ const ProductsData = () => {
 <h1>Mirror Products</h1>
     {ceilingtoolsProducts.map(product => (
       <div key={product.id}>
-        <img src={product.src} alt={product.title} />
+        <Image src={product.src} alt={product.title} />
         <h2>{product.title}</h2>
         <p>{product.detail}</p>
       </div>

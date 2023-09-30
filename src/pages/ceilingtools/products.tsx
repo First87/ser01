@@ -1,6 +1,5 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import CardProducts from './Ceilingtools';
 import Head from 'next/head';
 
 const Header = dynamic(() => import('../components/Header'), {
