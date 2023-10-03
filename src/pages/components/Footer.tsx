@@ -31,10 +31,7 @@ const Footer =(props:Props) => {
                       </svg>
                    <span className="sr-only">Facebook page</span>
                 </Link>
-              // <Link href="/">
-               // <FaLine />
-
-              //</Link>
+              
                 
                     </div>
                 
