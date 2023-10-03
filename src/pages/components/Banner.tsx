@@ -47,17 +47,7 @@ const Banner: React.FC = () => {
           style={{ width: "100%", height: "auto" }}
         />
       </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src="/h3.png"
-          alt="banner"
-          loading="lazy"
-          width={100}
-          height={100}
-          sizes="100vw"
-          style={{ width: "100%", height: "auto" }}
-        />
-      </SwiperSlide>
+     
     </Swiper>
   );
 };
