@@ -62,10 +62,10 @@ export default function Products() {
     <>
       <Head>
         <title>สินค้าของเรา | เสริมศิริ อลูมินั่ม & สแตนเลส</title>
-        {/* <meta name="description" content="เรามีสินค้ามากมาย ไม่ว่าจะเป็น อลูมิเนียม สแตนเลส และอื่นๆอีกมากมาย " />
+        <meta name="description" content="เรามีสินค้ามากมาย ไม่ว่าจะเป็น อลูมิเนียม สแตนเลส และอื่นๆอีกมากมาย " />
         <meta name="robots" content="index,follow" />
         <meta name="keywords" content="จำหน่ายและติดตั้งอลูมิเนียมเส้นและกระจก\ยิปชั่ม ปูนและวัสดุอุปกรณ์ก่อสร้าง" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="nav.png" type="icon" />
       </Head>
       <Header />
