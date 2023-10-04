@@ -52,11 +52,10 @@ export default function ProductDetails() {
           </div>
           <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
             <Image
-              width={100}
-              height={100}
-              sizes="100vw"
+             width={500}
+             height={500}
               src={product.src}
-              alt={product.title}
+              alt={product.src}
               className="h-full w-full object-cover object-center"
             />
           </div>
