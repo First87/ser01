@@ -87,16 +87,16 @@ body {
  
 
 }
-.card-po{
-  /* outline: 1px solid #d3d3d3; */
+/* .card-po{
+  outline: 1px solid #d3d3d3;
   border-radius: 20px;
   box-shadow: 0px 1.2px 3px 0.9px rgba(0, 0, 0, 0.27);
-}
-.card-po:hover{
+} */
+/* .card-po:hover{
   outline: 1px solid #FF9D34;
   
 
-}
+} */
 .img-po{
   transition: 0.3s;
 }
